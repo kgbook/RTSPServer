@@ -60,7 +60,7 @@ function(add_style_check_target TARGET_NAME SOURCES_LIST)
         message(FATAL_ERROR "python not found!")
     endif()
 
-    find_file(GOOGLE_CPP_LINT_PY NAMES cpplint.py PATHS ${CMAKE_SOURCE_DIR}/cmake DOC "google cpp style scan program.")
+    find_file(GOOGLE_CPP_LINT_PY NAMES cpplint.py PATHS ${CMAKE_SOURCE_DIR}/third_party/cpplint DOC "google cpp style scan program.")
     if (NOT GOOGLE_CPP_LINT_PY)
         message (FATAL_ERROR "cpplint.py not found!")
     endif()
@@ -72,7 +72,7 @@ function(add_style_check_target TARGET_NAME SOURCES_LIST)
             COMMAND "${CMAKE_COMMAND}" -E chdir
             "${CMAKE_CURRENT_SOURCE_DIR}"
             "${PYTHON_EXECUTABLE}"
-            "${CMAKE_SOURCE_DIR}/cmake/cpplint.py"
+            ${GOOGLE_CPP_LINT_PY}
             "--filter=${STYLE_FILTER}"
             "--counting=detailed"
             "--extensions=cpp,hpp,h"

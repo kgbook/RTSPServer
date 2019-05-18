@@ -1,0 +1,9 @@
+[submodule "third_party/live555"]
+	path = third_party/live555
+	url = https://github.com/kgbook/live555.git
+[submodule "third_party/fmt"]
+	path = third_party/fmt
+	url = https://github.com/fmtlib/fmt.git
+[submodule "third_party/cpplint"]
+	path = third_party/cpplint
+	url = https://github.com/cpplint/cpplint.git
