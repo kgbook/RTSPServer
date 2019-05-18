@@ -31,10 +31,12 @@ pkg_check_modules(libavcodec REQUIRED libavcodec)
 pkg_check_modules(spdlog REQUIRED spdlog)
 #pkg_check_modules(fmt REQUIRED fmt)    # fmt 5.3.0 issue on macOS 10.14.4, use as submodule
 
-set(Boost_USE_STATIC_LIBS OFF)
-set(Boost_USE_MULTITHREADED ON)
-set(Boost_USE_STATIC_RUNTIME OFF)
-find_package(Boost 1.66.0 REQUIRED)
+set(Boost_USE_STATIC_LIBS        ON)  # only find static libs
+set(Boost_USE_DEBUG_LIBS         OFF) # ignore debug libs and
+set(Boost_USE_RELEASE_LIBS       ON)  # only find release libs
+set(Boost_USE_MULTITHREADED      ON)
+set(Boost_USE_STATIC_RUNTIME    OFF)
+find_package(Boost COMPONENTS thread filesystem date_time chrono system)
 if (NOT Boost_FOUND)
     message(FATAL_ERROR "Boost needed, install it please!!!")
 endif ()
