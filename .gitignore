@@ -4,6 +4,8 @@ cmake-build-debug
 build
 .DS_Store
 .idea
+*.json
+*.js
 #
 # Prerequisites
 *.d

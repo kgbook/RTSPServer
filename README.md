@@ -33,8 +33,8 @@ Pull stream from RTSPServer using FFmpeg, support H.264/H.265 wrapper into MP4 c
 
 ```shell
 git submodule update --init --remote --recursive
-chmod +x build.sh
-bash build.sh
+chmod +x scripts/build.sh
+bash scripts/build.sh
 ```
 
 ## Code Style
