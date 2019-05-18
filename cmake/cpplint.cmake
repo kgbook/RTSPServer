@@ -54,7 +54,7 @@ set(STYLE_FILTER ${STYLE_FILTER}-runtime/printf,)
 
 set(STYLE_FILTER ${STYLE_FILTER}-legal/copyright)
 
-function(add_style_check_target TARGET_NAME SOURCES_LIST)
+function(cpplint_check TARGET_NAME SOURCES_LIST)
 
     if(NOT PYTHONINTERP_FOUND)
         message(FATAL_ERROR "python not found!")
