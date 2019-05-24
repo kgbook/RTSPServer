@@ -20,9 +20,6 @@ Pull stream from RTSPServer using FFmpeg, support H.264/H.265 wrapper into MP4 c
 - [spdlog](https://github.com/gabime/spdlog)
 - [Boost](https://www.boost.org/)
 - [fmt](https://github.com/fmtlib/fmt)
-- [python](https://www.python.org/) 2.7 required
-- [cmake](https://cmake.org/) 3.7 required
-- pkg-config
 
 ## Build
 
@@ -37,10 +34,14 @@ chmod +x scripts/build.sh
 bash scripts/build.sh
 ```
 
-## Code Style
+## Used third-party tools
 
-The project use automated checker named **cpplint** to make sure a C++ file
-follows [Google's C++ styleguide](https://google.github.io/styleguide/cppguide.html).
-
-False positives can be ignored by putting `// NOLINT` at the end of the line
-or `// NOLINTNEXTLINE` in the previous line.
+- [commitize](https://github.com/commitizen/cz-cli.git), helps format commit messages.
+- [python](https://www.python.org/) 2.7 required, cpplint use python interpreter.
+- [pkg-config](https://linux.die.net/man/1/pkg-config), used to retrieve metainformation about installed libraries in the system.
+- [cpplint](https://github.com/cpplint/cpplint.git), to check C/C++ files for style issues 
+following [Google's C++ styleguide](https://google.github.io/styleguide/cppguide.html).
+- [cmake](https://cmake.org/) 3.7 required, used to control the software compilation process.
+- [Codacy](https://www.codacy.com), automates code reviews and monitors code quality.
+- [CodeFactor](https://www.codefactor.io/), used to perform Code Review.
+- [Travis CI](https://travis-ci.org/), used to build and test software projects.
