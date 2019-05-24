@@ -44,4 +44,4 @@ jobs: # a basic unit of work in a run
           command: 'mkdir build ; cd build ; cmake ..'
       - run:
           name: Compile
-          command: 'make -j2'
+          command: 'cmake --build build' # 'cd build && make -j2'
