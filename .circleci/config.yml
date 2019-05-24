@@ -6,7 +6,8 @@ checkout:
 
 jobs: # a basic unit of work in a run
   build: # runs not using `Workflows` must have a `build` job as entry point
-    macos: "10.2.1" # indicate that we are using the macOS executor
+    docker:
+      - image: debian:stretch
     steps: # a series of commands to run
       - run:
           name: Install CMake
