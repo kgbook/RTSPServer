@@ -21,7 +21,6 @@ public:
     virtual void writeVideoFrame(std::shared_ptr<AVPacket> packet);
 
 private:
-
     bool codecInit();
 
     bool addStream();
