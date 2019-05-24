@@ -5,8 +5,7 @@ checkout:
     - git submodule update --init --remote --recursive
 
 jobs: # a basic unit of work in a run
-  build: # runs not using `Workflows` must have a `build` job as entry point
-    macos  # indicate that we are using the macOS executor
+  build: macos  # runs not using `Workflows` must have a `build` job as entry point
     steps: # a series of commands to run
       - run:
           name: Install CMake
