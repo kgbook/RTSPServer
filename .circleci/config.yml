@@ -10,17 +10,23 @@ jobs: # a basic unit of work in a run
       - image: debian:stretch
     steps: # a series of commands to run
       - run:
+        name: Install sudo
+        command: 'apt-get update && apt-get install -y sudo && rm -rf /var/lib/apt/lists/*'
+      - run:
+        name: Install GCC
+        command: 'apt-get update && apt-get install -y gcc g++'
+      - run:
           name: Install CMake
-          command: 'brew install cmake'
+          command: 'apt-get install cmake'
       - run:
           name: Install Boost
-          command: 'brew install boost'
+          command: 'apt-get install boost'
       - run:
           name: Install FFmpeg
-          command: 'brew install ffmpeg'
+          command: 'apt-get install ffmpeg'
       - run:
           name: Install spdlog
-          command: 'brew install spdlog'
+          command: 'apt-get install spdlog'
       - run:
           name: Create build files
           command: 'mkdir build ; cd build ; cmake ..'
