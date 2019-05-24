@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/kgbook/RTSPServer.svg?branch=dev)](https://travis-ci.org/kgbook/RTSPServer)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8fc58459dbaf486884713133d034b968)](https://www.codacy.com/app/kgbook/RTSPServer?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kgbook/RTSPServer&amp;utm_campaign=Badge_Grade)
+[![CodeFactor](https://www.codefactor.io/repository/github/kgbook/rtspserver/badge)](https://www.codefactor.io/repository/github/kgbook/rtspserver)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://github.com/kgbook/RTSPServer)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/kgbook/RTSPServer/master/LICENSE)
 
