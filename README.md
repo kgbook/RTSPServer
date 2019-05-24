@@ -43,6 +43,8 @@ bash scripts/build.sh
 - [cpplint](https://github.com/cpplint/cpplint.git), to check C/C++ files for style issues 
 following [Google's C++ styleguide](https://google.github.io/styleguide/cppguide.html).
 - [cmake](https://cmake.org/) 3.7 required, used to control the software compilation process.
+- [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog.git), 
+using **conventional-changelog** Adapter to generate [CHANGELOG](CHANGELOG.md).
 - [Codacy](https://www.codacy.com), automates code reviews and monitors code quality.
 - [CodeFactor](https://www.codefactor.io/), used to perform Code Review.
 - [Travis CI](https://travis-ci.org/), used to build and test software projects.
