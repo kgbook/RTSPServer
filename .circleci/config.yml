@@ -31,6 +31,9 @@ jobs: # a basic unit of work in a run
           name: Install spdlog
           command: 'apt-get install -y libspdlog-dev'
       - run:
+          name: Install python@2.7
+          command: 'apt-get install -y python2.7'
+      - run:
           name: Remove package list
           command: 'rm -rf /var/lib/apt/lists/*'
       - run:
