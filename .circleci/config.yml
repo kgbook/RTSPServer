@@ -33,6 +33,9 @@ jobs: # a basic unit of work in a run
       - run:
           name: Install python@2.7
           command: 'apt-get install -y python2.7'
+      -run:
+          name: Install pkg-config
+          command: 'apt-get install -y pkg-config'
       - run:
           name: Remove package list
           command: 'rm -rf /var/lib/apt/lists/*'
