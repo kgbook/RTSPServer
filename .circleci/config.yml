@@ -1,14 +1,14 @@
 version: 2 # use version 2.0 of CircleCI
 
-checkout:
-  post:
-    - git submodule update --init --remote --recursive
-
 jobs: # a basic unit of work in a run
   build: # runs not using `Workflows` must have a `build` job as entry point
     docker:
       - image: debian:stretch
     steps: # a series of commands to run
+      - checkout
+      - run:
+        name: Sync submodule
+        commond: 'git submodule update --init --remote --recursive'
       - run:
         name: Install sudo
         command: 'apt-get update && apt-get install -y sudo && rm -rf /var/lib/apt/lists/*'
