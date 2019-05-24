@@ -1,0 +1,29 @@
+version: 2 # use version 2.0 of CircleCI
+
+checkout:
+  post:
+    - git submodule update --init --remote --recursive
+
+jobs: # a basic unit of work in a run
+  build: # runs not using `Workflows` must have a `build` job as entry point
+    docker:
+      macos:  # indicate that we are using the macOS executor
+    steps: # a series of commands to run
+      - run:
+          name: Install CMake
+          command: 'brew install cmake'
+      - run:
+          name: Install Boost
+          command: 'brew install boost'
+      - run:
+          name: Install FFmpeg
+          command: 'brew install ffmpeg'
+      - run:
+          name: Install spdlog
+          command: 'brew install spdlog'
+      - run:
+          name: Create build files
+          command: 'mkdir build ; cd build ; cmake ..'
+      - run:
+          name: Compile
+          command: 'make -j2'
