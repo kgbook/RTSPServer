@@ -29,7 +29,7 @@ jobs: # a basic unit of work in a run
           command: 'apt-get install -y ffmpeg'
       - run:
           name: Install spdlog
-          command: 'apt-get install -y spdlog'
+          command: 'apt-get install -y libspdlog-dev'
       - run:
           name: Remove package list
           command: 'rm -rf /var/lib/apt/lists/*'
