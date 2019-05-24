@@ -22,7 +22,7 @@ int main(int argc, char **argv) {
     param->stream_name_ = "stream";
     param->port_ = 554u;
     param->bitrate_ = 4096;
-    param->account.insert(std::make_pair<std::string, std::string>("admin", "admin"));
+    param->account.insert(std::make_pair("admin", "admin"));
 
     /* init encoder, get frame from encoder and then send to streamQueue
      * ......
