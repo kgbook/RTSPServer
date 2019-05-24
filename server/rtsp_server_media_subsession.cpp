@@ -32,7 +32,6 @@ RTSPServerMediaSubsession::RTSPServerMediaSubsession(int32_t payload_type,
 }
 
 RTSPServerMediaSubsession::~RTSPServerMediaSubsession() {
-
 }
 
 FramedSource *RTSPServerMediaSubsession::createNewStreamSource(unsigned clientSessionId,
