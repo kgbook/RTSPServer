@@ -1,4 +1,7 @@
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/../common/utils/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/../common/skeleton/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/../client/include
         ${CMAKE_CURRENT_SOURCE_DIR}/../third_party/live555/liveMedia/include
         ${CMAKE_CURRENT_SOURCE_DIR}/../third_party/live555/groupsock/include
         ${CMAKE_CURRENT_SOURCE_DIR}/../third_party/live555/BasicUsageEnvironment/include

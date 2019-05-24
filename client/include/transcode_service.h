@@ -1,9 +1,9 @@
 #ifndef PROJECT_TRANSCODE_SERVICE_H
 #define PROJECT_TRANSCODE_SERVICE_H
 
-#include "skeleton/skeleton_service.h"
-#include "utils/stream_queue.h"
-#include "client/stream_transcode.h"
+#include "skeleton_service.h"
+#include "stream_queue.h"
+#include "stream_transcode.h"
 
 class TranscodeService : public SkeletonService {
 public:

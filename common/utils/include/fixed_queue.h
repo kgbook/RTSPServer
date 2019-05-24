@@ -5,10 +5,6 @@
 #include <memory>
 #include <mutex>
 #include <queue>
-#include <boost/timer/timer.hpp>
-#include <boost/chrono.hpp>
-#include <boost/thread/thread.hpp>
-//#include "utils/log.h"
 
 template <typename T>
 class FixedQueue {

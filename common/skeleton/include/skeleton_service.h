@@ -2,7 +2,7 @@
 #define PROJECT_SKELETON_SERVICE_H
 
 #include <boost/thread.hpp>
-#include "utils/log.h"
+#include "log.h"
 
 class SkeletonService {
 public:

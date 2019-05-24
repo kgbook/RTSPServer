@@ -3,7 +3,7 @@
 #include <execinfo.h>
 #include <limits.h>
 #include <sys/resource.h>
-#include "utils/util.h"
+#include "util.h"
 
 void Util::enable_core_dump() {
     struct rlimit corelim;

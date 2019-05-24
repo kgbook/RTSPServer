@@ -1,4 +1,4 @@
-#include "utils/idle_service.h"
+#include "idle_service.h"
 
 IdleService::IdleService() : heartbeat_freq(30) {
     log = Log::getInstance();

@@ -1,4 +1,4 @@
-#include "client/stream_transcode.h"
+#include "stream_transcode.h"
 
 bool StreamTranscode::openStream(std::string url) {
     AVFormatContext *iformat_ctx = nullptr;

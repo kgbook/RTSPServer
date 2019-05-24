@@ -1,8 +1,8 @@
 #ifndef PROJECT_IDLE_SERVICE_H
 #define PROJECT_IDLE_SERVICE_H
 
-#include "utils/log.h"
-#include "skeleton/skeleton_service.h"
+#include "log.h"
+#include "skeleton_service.h"
 
 class IdleService : public SkeletonService {
 public:

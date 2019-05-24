@@ -3,7 +3,7 @@
 #include "H264VideoStreamDiscreteFramer.hh"
 #include "H265VideoRTPSink.hh"
 #include "H265VideoStreamDiscreteFramer.hh"
-#include "server/rtsp_server_media_subsession.h"
+#include "rtsp_server_media_subsession.h"
 
 RTSPServerMediaSubsession *RTSPServerMediaSubsession::createNew(int32_t payload_type,
                                                                 int32_t bitrate,

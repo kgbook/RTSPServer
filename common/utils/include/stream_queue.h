@@ -4,7 +4,7 @@
 extern "C" {
 #include <libavcodec/avcodec.h>
 }
-#include "utils/fixed_queue.h"
+#include "fixed_queue.h"
 
 using StreamQueue = FixedQueue<AVPacket>;
 

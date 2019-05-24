@@ -1,4 +1,4 @@
-#include "server/stream_channel.h"
+#include "stream_channel.h"
 
 StreamChannel *StreamChannel::createNew(StreamType type) {
     return new StreamChannel(type);

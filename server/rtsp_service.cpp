@@ -1,6 +1,6 @@
-#include "skeleton/exception.h"
-#include "server/rtsp_stream_input.h"
-#include "server/rtsp_service.h"
+#include "exception.h"
+#include "rtsp_stream_input.h"
+#include "rtsp_service.h"
 
 using namespace exception;
 

@@ -2,8 +2,8 @@
 #include <ctype.h>
 #include "HashTable.hh"
 #include "GroupsockHelper.hh"
-#include "server/rtsp_stream_server.h"
-#include "server/rtsp_server_media_subsession.h"
+#include "rtsp_stream_server.h"
+#include "rtsp_server_media_subsession.h"
 
 RTSPStreamServer *RTSPStreamServer::createNew(UsageEnvironment &env,
                                               int32_t payload_type,

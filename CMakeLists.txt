@@ -41,8 +41,7 @@ if (NOT Boost_FOUND)
     message(FATAL_ERROR "Boost needed, install it please!!!")
 endif ()
 
-include_directories(${CMAKE_SOURCE_DIR}
-        ${CMAKE_SOURCE_DIR}/common
+include_directories(
         ${libavformat_INCLUDE_DIRS}
         ${libavutil_INCLUDE_DIRS}
         ${libavcodec_INCLUDE_DIRS}

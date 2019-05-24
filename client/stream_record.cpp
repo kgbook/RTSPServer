@@ -1,7 +1,7 @@
 extern "C" {
 #include <libavutil/opt.h>
 }
-#include "client/stream_record.h"
+#include "stream_record.h"
 
 StreamRecord::StreamRecord(std::shared_ptr<VideoCodecParameter> param)
     : oformat(nullptr),

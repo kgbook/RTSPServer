@@ -1,11 +1,11 @@
 #ifndef PROJECT_RECORD_SERVICE_H
 #define PROJECT_RECORD_SERVICE_H
 
-#include "skeleton/skeleton_service.h"
-#include "client/stream_record.h"
-#include "client/video_codec_parameter.h"
-#include "utils/date_time.h"
-#include "utils/stream_queue.h"
+#include "skeleton_service.h"
+#include "stream_record.h"
+#include "video_codec_parameter.h"
+#include "date_time.h"
+#include "stream_queue.h"
 
 class RecordService : public SkeletonService {
 public:

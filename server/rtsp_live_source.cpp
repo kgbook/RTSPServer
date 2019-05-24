@@ -1,6 +1,6 @@
-#include "utils/h264or5_nalu.h"
-#include "client/ffmpeg_utils.h"
-#include "server/rtsp_live_source.h"
+#include "h264or5_nalu.h"
+#include "ffmpeg_utils.h"
+#include "rtsp_live_source.h"
 
 RTSPLiveSource::RTSPLiveSource(std::shared_ptr<StreamQueue> streamQueue, UsageEnvironment &env)
     : FramedSource(env), streamQueue_(streamQueue), fReferenceCount(1), firstClientConnect_(false) {

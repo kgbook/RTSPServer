@@ -1,4 +1,4 @@
-#include "utils/log.h"
+#include "log.h"
 
 Log *Log::getInstance() {
     static Log log;

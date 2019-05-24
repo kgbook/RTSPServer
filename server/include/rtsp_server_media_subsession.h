@@ -4,8 +4,8 @@
 #include "OnDemandServerMediaSubsession.hh"
 #include "FramedFilter.hh"
 #include "Groupsock.hh"
-#include "utils/stream_queue.h"
-#include "server/rtsp_stream_input.h"
+#include "stream_queue.h"
+#include "rtsp_stream_input.h"
 
 class RTSPServerMediaSubsession : public OnDemandServerMediaSubsession {
 public:

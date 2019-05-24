@@ -4,11 +4,11 @@
 #include "liveMedia.hh"
 #include "ServerMediaSession.hh"
 #include "BasicUsageEnvironment.hh"
-#include "skeleton/skeleton_service.h"
-#include "utils/stream_queue.h"
-#include "server/rtsp_server_media_subsession.h"
-#include "server/rtsp_parameter.h"
-#include "server/rtsp_stream_server.h"
+#include "skeleton_service.h"
+#include "stream_queue.h"
+#include "rtsp_server_media_subsession.h"
+#include "rtsp_parameter.h"
+#include "rtsp_stream_server.h"
 
 class RTSPService : public SkeletonService {
 public:

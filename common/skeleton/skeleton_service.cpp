@@ -1,7 +1,7 @@
 #include <typeinfo>
 #include <cxxabi.h>
 #include <pthread.h>
-#include "skeleton/skeleton_service.h"
+#include "skeleton_service.h"
 
 SkeletonService::SkeletonService() {
     log = Log::getInstance();

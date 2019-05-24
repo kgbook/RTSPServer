@@ -2,9 +2,9 @@ extern "C" {
 #include <libavutil/dict.h>
 }
 
-#include "skeleton/exception.h"
-#include "utils/file.h"
-#include "client/ffmpeg_utils.h"
+#include "exception.h"
+#include "file.h"
+#include "ffmpeg_utils.h"
 
 FFmpegUtils::FFmpegUtils() {
     log_ = Log::getInstance();

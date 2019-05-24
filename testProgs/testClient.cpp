@@ -1,10 +1,9 @@
 #include <boost/asio/signal_set.hpp>
 #include <boost/asio/io_service.hpp>
-#include "utils/idle_service.h"
-#include "utils/log.h"
-#include "utils/util.h"
-#include "client/transcode_service.h"
-#include "client/record_service.h"
+#include "idle_service.h"
+#include "util.h"
+#include "transcode_service.h"
+#include "record_service.h"
 
 int main(int argc, char **argv) {
     const std::string url = "your Rtsp stream URL Here";
@@ -29,7 +28,6 @@ int main(int argc, char **argv) {
 
     idleService->init();
 
-    log->info("start nap");
     signals.async_wait(
         [&io_service](const boost::system::error_code& /*error*/, int signal_number){
             switch (signal_number) {
@@ -49,11 +47,8 @@ int main(int argc, char **argv) {
             }
         });
 
-    log->info("nap alarm setup done");
     io_service.run();
-    log->info("io_service done");
     idleService->destroy();
-    log->info("nap done");
 
     recordService->destory();
     delete(recordService);

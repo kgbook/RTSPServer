@@ -4,7 +4,7 @@
 #include <string>
 #include "MediaSink.hh"
 #include "UsageEnvironment.hh"
-#include "server/rtsp_live_source.h"
+#include "rtsp_live_source.h"
 
 class RTSPStreamInput : public Medium {
 public:

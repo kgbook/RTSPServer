@@ -1,8 +1,8 @@
 #ifndef PROJECT_STREAM_TRANSCODE_H
 #define PROJECT_STREAM_TRANSCODE_H
 
-#include "client/ffmpeg_utils.h"
-#include "client/video_codec_parameter.h"
+#include "ffmpeg_utils.h"
+#include "video_codec_parameter.h"
 
 class StreamTranscode : public FFmpegUtils {
 public:

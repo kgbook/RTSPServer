@@ -1,5 +1,5 @@
-#include "skeleton/exception.h"
-#include "client/transcode_service.h"
+#include "exception.h"
+#include "transcode_service.h"
 
 using namespace exception;
 

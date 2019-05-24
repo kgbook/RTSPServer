@@ -3,8 +3,8 @@
 
 #include <map>
 #include "FramedSource.hh"
-#include "utils/stream_queue.h"
-#include "utils/log.h" // NOLINT
+#include "stream_queue.h"
+#include "log.h" // NOLINT
 
 class RTSPLiveSource : public FramedSource {
 public:

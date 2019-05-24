@@ -1,4 +1,4 @@
-#include "server/rtsp_stream_input.h"
+#include "rtsp_stream_input.h"
 
 RTSPStreamInput *RTSPStreamInput::createNew(UsageEnvironment &env,
                                             std::shared_ptr<StreamQueue> queue,

@@ -3,9 +3,9 @@
 
 #include "NetAddress.hh"
 #include "RTSPServer.hh"
-#include "utils/log.h"
-#include "server/rtsp_stream_input.h"
-#include "server/stream_channel.h"
+#include "log.h"
+#include "rtsp_stream_input.h"
+#include "stream_channel.h"
 
 class RTSPStreamServer : public RTSPServer {
 public:

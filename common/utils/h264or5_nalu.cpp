@@ -1,8 +1,4 @@
-//
-// Created by kang on 2019/3/6.
-//
-
-#include "utils/h264or5_nalu.h"
+#include "h264or5_nalu.h"
 
 int32_t H264or5NALU::start_code_offset(void *buf, uint32_t len) {
     int32_t offset = -1;

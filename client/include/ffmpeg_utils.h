@@ -6,7 +6,7 @@ extern "C" {
 #include <libavformat/avformat.h>
 #include <libavcodec/avcodec.h>
 }
-#include "utils/log.h"
+#include "log.h"
 
 class FFmpegUtils {
 public:

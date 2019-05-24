@@ -1,5 +1,5 @@
 #include <sstream>
-#include "skeleton/exception.h"
+#include "exception.h"
 
 namespace exception {
 RuntimeError::RuntimeError(std::string& reason)

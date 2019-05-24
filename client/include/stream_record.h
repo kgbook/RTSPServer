@@ -4,9 +4,9 @@
 extern "C" {
 #include <libswscale/swscale.h>
 }
-#include "client/ffmpeg_utils.h"
-#include "utils/stream_queue.h"
-#include "client/video_codec_parameter.h"
+#include "ffmpeg_utils.h"
+#include "stream_queue.h"
+#include "video_codec_parameter.h"
 
 class StreamRecord : public FFmpegUtils {
 public:
