@@ -23,7 +23,7 @@ jobs: # a basic unit of work in a run
           command: 'apt-get install -y cmake'
       - run:
           name: Install Boost
-          command: 'apt-get install -y libboost-dev'
+          command: 'apt-get install -y libboost-all-dev' #cmake found no boost package if installed libboost-dev
       - run:
           name: Install FFmpeg
           command: 'apt-get install -y libavformat-dev libavutil-dev libavcodec-dev'
