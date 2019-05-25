@@ -3,7 +3,8 @@ version: 2 # use version 2.0 of CircleCI
 jobs: # a basic unit of work in a run
   build: # runs not using `Workflows` must have a `build` job as entry point
     docker:
-      - image: debian:stretch
+      - image: debian:buster # libspdlog-dev package version 1:0.11.0-2 lack of some header files,
+                             # switch Stretch to Buster to upgrade to 1.3.1-1 version
     steps: # a series of commands to run
       - run:
           name: Install sudo
