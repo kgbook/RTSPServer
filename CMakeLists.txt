@@ -28,6 +28,7 @@ endif ()
 pkg_check_modules(libavformat REQUIRED libavformat)
 pkg_check_modules(libavutil REQUIRED libavutil)
 pkg_check_modules(libavcodec REQUIRED libavcodec)
+pkg_check_modules(libswscale REQUIRED libswscale)
 pkg_check_modules(spdlog REQUIRED spdlog)
 #pkg_check_modules(fmt REQUIRED fmt)    # fmt 5.3.0 issue on macOS 10.14.4, use as submodule
 
@@ -45,6 +46,7 @@ include_directories(
         ${libavformat_INCLUDE_DIRS}
         ${libavutil_INCLUDE_DIRS}
         ${libavcodec_INCLUDE_DIRS}
+        ${libswscale_INCLUDE_DIR}
         ${Boost_INCLUDE_DIRS}
         ${spdlog_INCLUDE_DIRS}
 #        ${fmt_INCLUDE_DIRS}
@@ -54,6 +56,7 @@ include_directories(
 link_directories(${libavformat_LIBRARY_DIRS}
         ${libavutil_LIBRARY_DIRS}
         ${libavcodec_LIBRARY_DIRS}
+        ${libswscale_LIBRARY_DIR}
         ${Boost_LIBRARY_DIRS}
         ${spdlog_LIBRARY_DIRS}
 #        ${fmt_LIBRARY_DIRS}
