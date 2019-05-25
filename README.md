@@ -1,6 +1,7 @@
 # RTSPServer
 
-[![Build Status](https://travis-ci.org/kgbook/RTSPServer.svg?branch=dev)](https://travis-ci.org/kgbook/RTSPServer)
+[![Travis-CI](https://travis-ci.org/kgbook/RTSPServer.svg?branch=dev)](https://travis-ci.org/kgbook/RTSPServer)
+[![CircleCI](https://circleci.com/gh/kgbook/RTSPServer.svg?style=svg)](https://circleci.com/gh/kgbook/RTSPServer)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8fc58459dbaf486884713133d034b968)](https://www.codacy.com/app/kgbook/RTSPServer?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kgbook/RTSPServer&amp;utm_campaign=Badge_Grade)
 [![CodeFactor](https://www.codefactor.io/repository/github/kgbook/rtspserver/badge)](https://www.codefactor.io/repository/github/kgbook/rtspserver)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://github.com/kgbook/RTSPServer)
@@ -28,6 +29,8 @@ Pull stream from RTSPServer using FFmpeg, support H.264/H.265 wrapper into MP4 c
   see [third_party/live555/CMakeLists.txt](third_party/live555/CMakeLists.txt).
 - [fmt 5.3.0 version perhaps not work well on macOS 10.14.4](https://github.com/fmtlib/fmt/issues/1115),
   built as submodule if failed.
+- [no stdout_color_sinks.h in libspdlog-dev 1:0.11.0-2 package on debian:stretch](https://github.com/gabime/spdlog/issues/1088),
+  upgrade to 1.3.1-1 version or use debian:buster.
 
 ```shell
 git submodule update --init --remote --recursive
@@ -48,3 +51,4 @@ using **conventional-changelog** Adapter to generate [CHANGELOG](CHANGELOG.md).
 - [Codacy](https://www.codacy.com), automates code reviews and monitors code quality.
 - [CodeFactor](https://www.codefactor.io/), used to perform Code Review.
 - [Travis CI](https://travis-ci.org/), used to build and test software projects.
+- [CircleCI](https://circleci.com/), used to build, test, and deploy across numerous platform.

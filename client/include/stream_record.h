@@ -1,9 +1,6 @@
 #ifndef PROJECT_STREAM_RECORD_H
 #define PROJECT_STREAM_RECORD_H
 
-extern "C" {
-#include <libswscale/swscale.h>
-}
 #include "ffmpeg_utils.h"
 #include "stream_queue.h"
 #include "video_codec_parameter.h"

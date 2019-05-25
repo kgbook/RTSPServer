@@ -14,9 +14,15 @@ cpplint_check(test_cpplint "${test_src}")
 add_executable(clientApp testClient.cpp)
 add_executable(serverApp testServer.cpp)
 
-target_link_libraries(clientApp skeleton client utils fmt avformat avcodec avutil
-        boost_thread-mt boost_filesystem-mt boost_system-mt boost_chrono-mt)
+if (${CMAKE_HOST_SYSTEM_NAME} MATCHES Darwin)
+    set(Boost_libs boost_thread-mt boost_filesystem-mt boost_system-mt boost_chrono-mt)
+else()
+    set(Boost_libs boost_thread boost_filesystem boost_system boost_chrono)
+endif ()
 
-target_link_libraries(serverApp skeleton server utils fmt
+target_link_libraries(clientApp client utils skeleton fmt avformat avcodec avutil
+        ${Boost_libs} pthread)
+
+target_link_libraries(serverApp server utils skeleton fmt
         liveMedia BasicUsageEnvironment UsageEnvironment groupsock
-        boost_thread-mt boost_filesystem-mt boost_system-mt boost_chrono-mt)
+        ${Boost_libs} pthread)
